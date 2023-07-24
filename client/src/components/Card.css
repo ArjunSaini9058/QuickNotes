@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+}
+.cardbox {
+    /* border: rgba(85, 85, 84, 0.133) solid 5px; */
+    margin: 8px;
+    padding: 5px;
+    width: 200px;
+    /* background-color: #fff; */
+    background: #8e9eab;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    /* background: linear-gradient(93.16deg, #eed70ada 0.01%, #e4b827 100.01%); */
+    /* transition: background 0.3s ease; */
+    border-radius: 8px;
+  }
+  
+.cardheader{
+    /* border: black 5px solid; */
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+}
+.cardbox > .button {
+    /* background: #1877f2; */
+    background: linear-gradient(93.16deg, #eed70ada 0.01%, #e4b827 100.01%);
+    border: 1px solid orange;
+    color:blue;
+
+    /* font-size: 1.25rem; */
+    width: 70px;
+    padding: 5px;
+    margin: 0.5rem 0;
+    border-radius: 4px;
+    /* outline: none; */
+    cursor: pointer;
+    /* text-align: center; */
+    margin-left: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:15px;
+}
+.cardbox >.button:hover {
+    background: linear-gradient(93.16deg, #e4b827 100.01%, #eed70ada 0.01%);
+  }
+  
+
+.title{
+    /* text-decoration: underline; */
+    color:rgb(60, 60, 192);
+}
+.editbtn{
+    text-decoration: none;
+    background: linear-gradient(93.16deg, #eed70ada 0.01%, #e4b827 100.01%);
+    /* border: 1px solid orange; */
+    color:blue;
+}
+@media (max-width: 415px) {
+    .cardbox{
+        width: 180px;
+    }
+}
+@media (min-width: 490px) {
+    .cardheader{
+        justify-content: flex-start;
+    }
+}
