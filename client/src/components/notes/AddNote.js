@@ -21,7 +21,7 @@ function AddNote({user,setLoginUser}) {
         throw new Error("Authentication token not found");
       }
   
-      const response = await axios.post("http://localhost:5000/note",data, {
+      const response = await axios.post("https://quicknotes-server.onrender.com/note",data, {
         headers: {
           Authorization: `bearer ${token}`
         },

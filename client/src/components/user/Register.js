@@ -24,7 +24,7 @@ const Register = () => {
     const register = () => {
         const { username, email, password, password_confirmation } = user
         if( username && email && password && (password === password_confirmation)){
-            axios.post("http://localhost:5000/user/signup", user)
+            axios.post("https://quicknotes-server.onrender.com/user/signup", user)
             .then( res => {
                 alert("Registration Successfull! Loging Please!")
                 navigate("/login")

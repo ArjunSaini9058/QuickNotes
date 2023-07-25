@@ -21,7 +21,7 @@ function Card() {
         throw new Error("Authentication token not found");
       }
   
-      const response = await axios.get("http://localhost:5000/note", {
+      const response = await axios.get("https://quicknotes-server.onrender.com/note", {
         headers: {
           Authorization: `bearer ${token}`,
         },
@@ -42,7 +42,7 @@ function Card() {
         throw new Error("Authentication token not found");
       }
   
-      const response = await axios.delete(`http://localhost:5000/note/${id}`, {
+      const response = await axios.delete(`https://quicknotes-server.onrender.com/note/${id}`, {
         headers: {
           Authorization: `bearer ${token}`,
         },

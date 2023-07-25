@@ -22,7 +22,7 @@ const Login = ({setLoginUser}) => {
     const login = () => {
         const { email, password } = user
         if(email && password){
-                    axios.post("http://localhost:5000/user/signin", user)
+                    axios.post("https://quicknotes-server.onrender.com/user/signin", user)
         .then(res => {
             // alert("login success ")
             const jwtToken = res.data.token;

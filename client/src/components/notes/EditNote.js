@@ -23,7 +23,7 @@ function EditNote({ user, setLoginUser }) {
         throw new Error('Authentication token not found');
       }
 
-      const response = await axios.get(`http://localhost:5000/note/${id}`, {
+      const response = await axios.get(`https://quicknotes-server.onrender.com/note/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -45,7 +45,7 @@ function EditNote({ user, setLoginUser }) {
 
       const updatedNote = { title, description };
 
-      const response = await axios.put(`http://localhost:5000/note/${id}`, updatedNote, {
+      const response = await axios.put(`https://quicknotes-server.onrender.com/note/${id}`, updatedNote, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
